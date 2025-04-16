@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Rotating Ring</title>
+  <style>
+    body {
+      background: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .ring {
+      width: 100px;
+      height: 100px;
+      border: 15px solid cyan;
+      border-radius: 50%;
+      animation: rotateRing 2s linear infinite;
+      box-shadow: 0 0 20px cyan;
+    }
+
+    @keyframes rotateRing {
+      from { transform: rotateX(0deg) rotateY(0deg); }
+      to   { transform: rotateX(360deg) rotateY(360deg); }
+    }
+  </style>
+</head>
+<body>
+
+<div class="ring"></div>
+
+</body>
+</html>
